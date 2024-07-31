@@ -31,14 +31,14 @@ body {
 .football-field {
     background-image: url("images/football-field.png");
     height: 600px;
-    width: 420px;
+    width: 376px;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
 
 .lineup {
     height: 600px;
-    width: 420px;
+    width: 376px;
     display: grid;
     /* grid-auto-columns: calc(100% / 7); */
     grid-template-columns: repeat(7, auto);
@@ -74,7 +74,7 @@ body {
     margin: auto;
 }
 
-.accordion {
+/* .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -90,11 +90,11 @@ body {
 .active,
 .accordion:hover {
     background-color: #ccc;
-}
+} */
 
 .panel {
     padding: 0 18px;
-    display: none;
+    display: block;
     background-color: white;
     overflow: hidden;
 }
@@ -133,7 +133,7 @@ body {
 }
 
 /* The Close Button */
-.close {
+/* .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -145,7 +145,7 @@ body {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 
 .cb {
@@ -157,8 +157,8 @@ body {
 
 .unselectable-cover {
     display: none;
-    width: 200px;
-    height: 285px;
+    width: 150px;
+    height: 238px;
     position: absolute;
     z-index: 2;
     background-color: gray;
@@ -169,11 +169,13 @@ body {
     position: relative;
     z-index: 1;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .selectable-player img {
-    width: 200px;
-    height: 240px;
+    width: 150px;
+    height: 180px;
     object-position: bottom center;
     object-fit: contain;
     margin: 0 auto;
@@ -202,8 +204,8 @@ body {
 }
 
 .player img {
-    height: 96px;
-    width: 80px;
+    height: 64px;
+    width: 53px;
     object-position: bottom center;
     object-fit: contain;
     margin: 0 auto;
