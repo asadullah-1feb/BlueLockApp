@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blue Lineup App</title>
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Blue Lock Lineup App</h1>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <button class="accordion">Blue Lock Players</button>
+              <div class="panel">
+                    <div id="all-selectable-players" class="all-selectable-players">
+                    </div>
+               </div>
+            </div>
+          
+          </div>
+
+
+        <div class="main-container">
+            <div class="right">
+                <div class="formations-container">
+                    <select id="formation-select"> 
+                        <option value="0">Ubers</option>
+                        <option value="1">Bastard Munchen</option>
+                        <option value="2">Blue Lock Eleven</option>
+                        <option value="3">Barcha</option>
+                        <option value="4">Manshine City</option>
+                        <option value="5">4-1-2-1-2(N)</option>
+                        <option value="6">4-1-2-1-2(W)</option>
+                        <option value="7">5-3-2</option>
+                        <option value="8">4-4-1-1</option>
+                        <option value="9">4-3-3(D)</option>
+                        <option value="10">4-2-3-1</option>
+                        <option value="11">3-4-3(F)</option>
+                        <option value="12">3-4-3(D)</option>
+                        <option value="13">4-1-4-1</option>
+                        <option value="14">4-3-3(H)</option>
+                        <option value="15">4-3-3(A)</option>
+                        <option value="16">4-3-3(F)</option>
+                        <option value="17">4-4-2</option>
+                        <option value="18">4-5-1</option>
+                      </select>
+                </div>
+                <div id="football-field" class="football-field">
+                    <div class="lineup">
+                        <div class="player goalkeeper">
+                            <img src="./images/players/iemon.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/chigiri.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/igarashi.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/naruhaya.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/kuon.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/imamura.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/kunigami.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/raichi.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/gagamaru.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/bachira.png">
+                        </div>
+                        <div class="player" draggable="true">
+                            <img src="./images/players/isagi.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        
+    </div>
+    <script src="playerDatabase.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
